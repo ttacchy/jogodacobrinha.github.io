@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cobrinha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cobrinha</h1>
+  <div class="bar">
+    <span>Pontos <b id="score">0</b></span>
+    <span>Recorde <b id="best">0</b></span>
+  </div>
+
+  <div class="wrap">
+    <canvas id="c" width="440" height="440" aria-label="Tabuleiro do jogo"></canvas>
+    <div class="overlay" id="ov">
+      <h2 id="ovT">Pronto para jogar?</h2>
+      <p id="ovP">Use as setas ou WASD. Coma as maçãs e não bata em você mesmo.</p>
+      <button id="go">Jogar</button>
+    </div>
+  </div>
+
+  <div class="pad" aria-label="Controles">
+    <button class="u" data-d="u" aria-label="Cima">▲</button>
+    <button class="l" data-d="l" aria-label="Esquerda">◀</button>
+    <button class="d" data-d="d" aria-label="Baixo">▼</button>
+    <button class="r" data-d="r" aria-label="Direita">▶</button>
+  </div>
+  <p class="hint">Espaço pausa e retoma. Deslize na tela para virar.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
